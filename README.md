@@ -3,7 +3,7 @@
 A simple and interactive FAQ accordion component built using HTML, CSS, and JavaScript.
 
 ## 🖥️ Live Preview
-[View Project](#https://hossamelrawy.github.io/FAQ-accordion/)
+[View Project](https://hossamelrawy.github.io/FAQ-accordion/)
 
 ## 📌 Features
 - Responsive design for both desktop and mobile screens.
