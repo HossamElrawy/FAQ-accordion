@@ -1,0 +1,100 @@
+/* Reset default margin, padding, and set box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-image: url(images/background-pattern-desktop.svg); /* Background pattern */
+    background-size: 100%; /* Cover full width */
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%); /* Light purple background */
+    margin: 32px 0; /* Space above and below */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    font-family: 'Work Sans'; /* Font style */
+    color: hsl(292, 42%, 14%); /* Text color */
+}
+
+/* Main container styling */
+main {
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 32px; /* Inner spacing */
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px; /* Spacing between FAQ items */
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Header section containing icon and title */
+.main-head {
+    display: flex;
+    column-gap: 16px; /* Space between icon and title */
+    margin-bottom: 16px;
+}
+
+/* FAQ question container */
+.head {
+    display: flex;
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Align items vertically */
+    column-gap: 32px;
+}
+
+/* Answer section (hidden by default) */
+.hide {
+    display: none; /* Initially hidden */
+    width: 32.5rem;
+    font-weight: 400; /* Normal text weight */
+    color: hsl(292, 16%, 49%); /* Muted text color */
+}
+
+/* Cursor pointer for icons */
+.plus-icon,
+.minus-icon {
+    cursor: pointer;
+}
+
+/* Style for expand/collapse button */
+.button-plus {
+    border: none;
+    background-color: white;
+}
+
+/* Class to show the answer */
+.show {
+    display: block;
+}
+
+/* Question styling */
+.questions {
+    font-weight: 600; /* Bold text */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for questions */
+.questions:hover {
+    color: hsl(293, 62%, 42%); /* Darker purple on hover */
+}
+
+/* Responsive design for screens smaller than 800px */
+@media (max-width : 800px) {
+    body {
+        background-image: url(images/background-pattern-mobile.svg); /* Use mobile background */
+    }
+
+    .questions {
+        width: 210px; /* Adjust question width */
+    }
+
+    .hide {
+        width: 250px; /* Adjust answer width */
+        font-size: 13px; /* Smaller text */
+    }
+}
